@@ -84,7 +84,7 @@ async function findConversation(name) {
     // Start your app
     await app.start(process.env.PORT || 3000);
     
-    await findConversation("firebase-crash-channel")
+    await findConversation(process.env.CHANNEL_NAME)
     
     console.log('⚡️ Crashlytics bot app is running!');
   })();
